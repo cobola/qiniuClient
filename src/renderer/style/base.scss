@@ -1,0 +1,62 @@
+@import './params';
+
+body {
+  background-color: #FFFFFF;
+  color: $fontColor;
+}
+
+//表格 多选 图标边距修改
+.ivu-table-cell {
+  .ivu-checkbox-wrapper {
+    margin-right: 0;
+  }
+}
+
+.ivu-btn-text:focus {
+  box-shadow: none;
+}
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):after {
+  width: 4px !important;
+}
+
+.spin-icon-load {
+  animation: ani-demo-spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes ani-demo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 自定义scrollbar 效果不好
+::-webkit-scrollbar
+{
+  width: 4px;
+  height: 4px;
+  background-color: #F5F5F5;
+}
+
+!*定义滚动条轨道 内阴影+圆角*!
+::-webkit-scrollbar-track
+{
+  border-radius: 3px;
+  //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+!*定义滑块 内阴影+圆角*!
+::-webkit-scrollbar-thumb
+{
+  border-radius: 3px;
+  //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #A9A5A5;
+}*/
